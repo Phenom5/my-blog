@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('blogs');
 });
 
+Route::get('blogs', function () {
+    return view('blog');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
